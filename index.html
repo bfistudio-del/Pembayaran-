@@ -1,14 +1,29 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css"><title>BFI Studio Pembayaran</title></head><body>
-<div class="card"><h1>BFI Studio</h1><p>Pembayaran Undangan Digital</p>
+<div class="card"><h1>Barokah Fahmi Studio</h1><p>Pembayaran Undangan Digital</p>
   <div style="background:#e53935;color:white;padding:15px;border-radius:10px;text-align:center;margin:20px 0;">
     <h2 style="margin:0;">💳 Total Pembayaran</h2>
     <h1 style="margin:10px 0;">Rp150.000</h1>
   </div>
 <h2>Transfer BCA</h2><p><b>Nama:</b> Zulfahmi<br><b>No. Rekening:</b> <span id="rek">3403703857</span></p>
-<button onclick="navigator.clipboard.writeText('3403703857')">
+<button onclick="copyRek()">
 📋 Salin Nomor Rekening
 </button>
+
+<script>
+function copyRek() {
+    const rekening = "3403703857";
+
+    navigator.clipboard.writeText(rekening)
+    .then(function () {
+        alert("Nomor rekening berhasil disalin");
+    })
+    .catch(function () {
+        alert("Browser tidak mendukung fitur salin.");
+    });
+}
+</script>
+  
 <h2>Pembayaran QRIS</h2>
 <img src="qris.png" style="max-width:280px;width:100%" alt="QRIS">
 <p align="center">
