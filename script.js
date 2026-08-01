@@ -1,0 +1,1 @@
+function copyRek(){navigator.clipboard.writeText("3403703857");alert("Nomor rekening disalin");}
