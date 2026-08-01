@@ -1,0 +1,1 @@
+Letakkan QRIS Anda dengan nama qris.png di folder images.
